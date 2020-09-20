@@ -13,7 +13,8 @@ import javax.annotation.Resource;
 @RestController
 @Slf4j
 public class ConsumerController {
-    public static final String Payment_url="http://localhost:8001";
+    //public static final String Payment_url="http://localhost:8001";
+    public static final String Payment_url="http://cloud-payment-service";
     @Resource
     private RestTemplate restTemplate;
     @GetMapping(value = "/consumer/payment/create")
